@@ -1,0 +1,3 @@
+# Dart Exception Handling Issue
+
+This repository demonstrates a potential issue with exception handling in Dart applications.  The `fetchData` function uses a `try-catch` block to handle potential errors during an HTTP request.  However, the `rethrow` statement at the end of the `catch` block might cause the original exception's context to be lost if not handled carefully in the calling functions. This can make debugging more difficult.  The solution provides a more robust approach.
